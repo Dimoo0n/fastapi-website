@@ -8,7 +8,7 @@ class Product(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=True, index=True)
-    decription = Column(Text)
+    description = Column(Text)
     price = Column(Float, nullable=False)
     category_id = Column(Integer, ForeignKey("categories.id"), nullable=False)
     image_url = Column(String)

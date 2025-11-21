@@ -27,5 +27,5 @@ class ProductResponce(BaseModel):
         form_attributes = True
 
 class ProductListResponce(BaseModel):
-    product: list[ProductResponce]
+    products: list[ProductResponce]
     total: int = Field(..., description="Total number of products")
